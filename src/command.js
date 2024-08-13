@@ -1,4 +1,4 @@
-import { back, play, queue, skip } from "./controller/index.js";
+import { back, clear, play, queue, skip } from "./controller/index.js";
 
 export const commands = [
     {
@@ -35,6 +35,13 @@ export const commands = [
         description: 'Go back to the last song played',
         execute: async(client, interaction) => {
             back(client, interaction);
+        }
+    },
+    {
+        name: 'clear',
+        description: 'Đắp mộ cuộc tình',
+        execute: async(client, interaction) => {
+            clear(client, interaction);
         }
     },
 ];
