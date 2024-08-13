@@ -1,4 +1,4 @@
-import { play, queue } from "./controller/index.js";
+import { play, queue, skip } from "./controller/index.js";
 
 export const commands = [
     {
@@ -21,6 +21,13 @@ export const commands = [
         description: 'Get current queue',
         execute: async(client, interaction) => {
             queue(client, interaction);
+        }
+    },
+    {
+        name: 'skip',
+        description: 'Skip current track',
+        execute: async(client, interaction) => {
+            skip(client, interaction);
         }
     },
 ];
