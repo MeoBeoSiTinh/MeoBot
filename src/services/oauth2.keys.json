@@ -1,0 +1,11 @@
+{
+    "web": {
+      "client_id": "615354717335-qvhh1ig7kdbb293vum40d7nedcen7974.apps.googleusercontent.com",
+      "project_id": "silent-scanner-455213-u9",
+      "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+      "token_uri": "https://oauth2.googleapis.com/token",
+      "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+      "client_secret": "your-client-secret",
+      "redirect_uris": ["http://localhost:3000/oauth2callback"]
+    }
+  }
