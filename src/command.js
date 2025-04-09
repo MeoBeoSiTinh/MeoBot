@@ -1,4 +1,4 @@
-import { back, clear, play, queue, skip } from "./controller/index.js";
+import { back, clear, play, queue, skip, rate } from "./controller/index.js";
 
 export const commands = [
     {
@@ -44,5 +44,12 @@ export const commands = [
             clear(client, interaction);
         }
     },
+    {
+        name: 'rate',
+        description: 'POE RMT RATE CHECK',
+        execute: async(client, interaction) => {
+            rate(client, interaction);
+        }
+    }
 ];
 

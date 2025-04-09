@@ -7,7 +7,7 @@ dotenv.config();
 export const play = async (client, interaction) => {
   if (!interaction.member.voice.channel) {
     return interaction.reply(
-      "You need to be in a Voice Channel to play a song."
+      "Voice chat ?."
     );
   }
 

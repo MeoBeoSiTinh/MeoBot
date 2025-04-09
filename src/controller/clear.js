@@ -11,6 +11,6 @@ export const clear = async (client, interaction) => {
     queue.tracks.clear();
     const embed = new EmbedBuilder()
             .setColor('#2f3136')
-            .setAuthor({ name: `Track ko còn và Lan Anh cũng vậy` });
+            .setAuthor({ name: `Track ko còn và Meomafia cũng vậy` });
     await interaction.reply({embeds:[embed]})
 }

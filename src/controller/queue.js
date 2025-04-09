@@ -3,7 +3,6 @@ import { EmbedBuilder } from "discord.js";
 
 export const queue = async (client, interaction) => {
   const queue = useQueue(interaction.guild);
-  console.log(queue);
   
   if (!queue) await interaction.reply("Đm queue trống mà.");
   if (!queue.tracks.toArray()[0])
