@@ -4,4 +4,5 @@ import { skip } from "./skip.js";
 import { back } from "./back.js";
 import { clear } from "./clear.js";
 import { rate } from "./rate.js";
-export {queue, play, skip, back, clear, rate};
+import { getPriceFromG2G } from "./getPriceFromG2G.js";
+export {queue, play, skip, back, clear, rate, getPriceFromG2G};

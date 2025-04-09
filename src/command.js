@@ -1,4 +1,4 @@
-import { back, clear, play, queue, skip, rate } from "./controller/index.js";
+import { back, clear, play, queue, skip, rate, getPriceFromG2G } from "./controller/index.js";
 
 export const commands = [
     {
@@ -50,6 +50,13 @@ export const commands = [
         execute: async(client, interaction) => {
             rate(client, interaction);
         }
-    }
+    },
+    {
+        name: 'g2g',
+        description: 'G2G RMT RATE CHECK',
+        execute: async(client, interaction) => {
+            getPriceFromG2G(client, interaction);
+        }
+    },
 ];
 
